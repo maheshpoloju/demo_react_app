@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 import doc1 from "./doc1.jpg"
 import doc2 from "./doc2.png"
 import doc3 from "./doc3.jpg"
@@ -7,7 +7,7 @@ const teamData = [
 	{
 		id:1,
 		imageUrl: doc2,
-		description: "Srila Prabhupada was born Abhay Charan De on September 1, 1896 to a practicing Hindu family in Kolkata.  As a youth growing up in British-controlled India, Abhay became involved with Mahatma Gandhi’s civil disobedience movement to secure independence for his nation. A 1922 meeting with a prominent scholar and religious leader, Srila Bhaktisiddhanta Sarasvati, proved most influential on Abhay’s future calling. Srila Bhaktisiddhanta was a leader in the Gaudiya Vaishnava denomination, a monotheistic tradition within the broad Hindu culture. He asked Abhay to bring the teachings of Lord Krishna to the English-speaking world."
+		description: "Srila Prabhupada was born Abhay Charan De on September 1, 1896 to a practicing Hindu family in Kolkata.  As a youth growing up in British-controlled India, Abhay became involved with Mahatma Gandhi’s civil disobedience movement to secure independence for his nation. A 1922 meeting with a prominent scholar and religious leader, Srila Bhaktisiddhanta Sarasvati, proved most influential on Abhay’s future calling. Srila Bhaktisiddhanta was a leader in the Gaudiya Vaishnava denomination, a monotheistic tradition within the broad Hindu culture. He asked Abhay to bring the teachings of Lord Krishna to the English-speaking world. Srila Prabhupada’s most significant contributions, perhaps, are his books. He authored over 70 volumes on the Krishna tradition, which are highly respected by scholars for their authority, depth, fidelity to the tradition and clarity. Several of his works are used as textbooks in university courses. His writings have been translated into 76 languages. His most prominent works include: Bhagavad-gita As It Is, the multi-volume Srimad-Bhagavatam and the set of Sri Caitanya-caritamrita books."
 	},
 	{
 		id:2,
@@ -27,6 +27,7 @@ const Home = () => {
 			<div className='d-flex justify-content-center flex-wrap'>
 				{
 					teamData.map(each => {
+						
 						return(
 							<div className='person-container' key={each.id}>
 								<div className='image-container'> 
@@ -35,6 +36,7 @@ const Home = () => {
 								<p className='description'>
 									{each.description}
 								</p>
+								
 							</div>
 						)
 					})
