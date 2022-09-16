@@ -3,5 +3,44 @@
   	flex-direction:column;
   	justify-content:center;
   	align-items: center;
-	height:100vh;
+  	margin-top:20px;
+		
+}
+
+.person-container{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+  	align-items: center;
+  	margin:10px;
+  	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  	width:660px;
+  	
+}
+
+.profile-image{
+	height:350px;
+	width:360px;	
+	margin-top:10px;
+}
+@media screen and (max-width: 768px) {
+	.profile-image{
+		width:340px;
+	}
+	.person-container{
+		width:340px;	
+	}
+}
+.description{
+	font-size:17px;
+	margin-top:10px;
+	margin-left:5px;
+	margin-right:5px;
+	text-align:center;
+}
+@media screen and (max-width: 768px) {
+	.description{
+		font-size:14px;
+	
+	}
 }

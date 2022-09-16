@@ -22,6 +22,7 @@ function App() {
             <Route exact path="/general-consultation" element={<GeneralConsultation />} />
             <Route exact path="/medication-refill" element={<MedicationRefill />} />
             <Route exact path="/registration" element={<Registration />} />
+           
         </Routes>
       </div>
     </div>

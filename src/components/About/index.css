@@ -3,47 +3,6 @@
   	flex-direction:column;
   	justify-content:center;
   	align-items: center;
-  	margin-top:20px;
+  	height:100vh;	
 		
-}
-.images-container{
-	display:flex;
-
-}
-@media screen and (max-width: 998px) {
-	.images-container{
-		flex-direction:column;
-	}
-}
-.person-container{
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-  	align-items: center;
-  	margin:10px;
-  	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.profile-image{
-	height:300px;
-	width:450px;	
-	margin-top:10px;
-}
-@media screen and (max-width: 998px) {
-	.profile-image{
-		height:240px;
-		width:320px;	
-	}
-}
-.description{
-	font-size:15px;
-	margin-left:10px;
-	margin:10px;
-	text-align:center;
-}
-@media screen and (max-width: 998px) {
-	.description{
-		font-size:12px;
-		text-align:center;	
-	}
 }

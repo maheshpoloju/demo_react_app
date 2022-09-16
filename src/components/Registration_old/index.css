@@ -1,0 +1,167 @@
+.register_container {
+  /*height: 600px;*/
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-top:20px;
+  margin-bottom:20px;
+  /*border:2px solid red;*/
+}
+
+@media screen and (max-width: 768px) {
+  .register_container  {
+    width: 300px;
+  }
+}
+.register-here-heading{
+  text-align:center;
+  margin-top:10px;
+}
+@media screen and (max-width: 998px) {
+  .register-here-heading{
+    font-size:22px;
+  }
+}
+.register-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*background-color: light;*/
+  border-radius:10px;
+  padding:10px;
+  /*border:2px solid black;*/
+
+}
+
+.input-fields-container{
+  display:flex;
+}
+@media screen and (max-width: 768px) {
+  .input-fields-container{
+    flex-direction:column;
+  }
+}
+.input-field{
+  margin-left:10px;
+}
+.input {
+  outline: none;
+  border: none;
+  width: 370px;
+  padding: 15px;
+  /*border-radius: 10px;*/
+  background-color: #edf5f3;
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight:700;
+}
+
+
+.register-button{
+  padding: 12px 0;
+  background-color: #edf5f3;
+  border-radius: 20px;
+  width: 180px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  border:none;
+  margin-top: 10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+@media screen and (max-width: 768px) {
+  .input {
+    width: 260px;
+    padding: 10px;
+  }
+  .sign-up-button{
+    padding: 10px 0;
+    font-size: 12px;
+  }
+}
+.medical-history-heading{
+  text-align:center;
+  margin-top:10px;
+}
+@media screen and (max-width: 998px) {
+  .medical-history-heading{
+    font-size:22px;
+  }
+}
+.medical-history-form-container{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+@media screen and (max-width: 998px) {
+  .medical-history-form-container{
+    align-items:center;
+  }
+}
+
+.medical-history-checkbox-container{
+  margin-left:10px;
+}
+@media screen and (max-width: 998px) {
+  .medical-history-checkbox-container{
+    align-items:flex-start;
+    
+  }
+}
+.label-container{
+  font-size: 16px;
+  font-weight: 600;
+  margin-left:10px;
+}
+.upload-container{
+  margin-top:10px;
+  display:flex;
+  justify-content:space-between;
+  margin-left:10px;
+  /*border-bottom:1px solid black;*/
+}
+.upload-label-text{
+  font-weight:600;  
+}
+.upload-label{
+  margin-left:10px;
+  margin-bottom:10px;
+}
+
+@media screen and (max-width: 998px) {
+  .upload-container{
+    flex-direction:column;
+    text-align:center;
+  }
+  .upload-label{
+    margin-left:80px;
+  }
+}
+.submit-button{
+  padding: 12px 0;
+  background-color: #edf5f3;
+  border-radius: 20px;
+  width: 180px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  border:none;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.select-option-label{
+  /*font-weight:600;*/
+}
