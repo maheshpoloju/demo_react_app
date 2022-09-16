@@ -171,7 +171,7 @@ const Registration = () => {
 
         		{medicalHistoryOptions.map((each) => {
 			          return (
-			            	<div key={each.id} onChange={() => handleMedicalHistory(each)}>
+			            	<div className='d-flex' key={each.id} onChange={() => handleMedicalHistory(each)}>
 				            	<input type="checkbox" id={each.id} />
 					              <label
 					                className="label-container"
