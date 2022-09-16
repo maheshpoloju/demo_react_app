@@ -6,7 +6,7 @@ import GeneralConsultation from "./components/GeneralConsultation";
 import MedicationRefill from "./components/MedicationRefill";
 import Registration from "./components/Registration";
 import Home from "./components/Home";
-import About from "./components/About";
+// import About from "./components/About";
 import './App.css';
 
 function App() {
@@ -16,7 +16,6 @@ function App() {
       <div className="container">
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/about" element={<About />} />
             <Route exact path="/covid-care" element={<CovidCare />} />
             <Route exact path="/acute-care" element={<AcuteCare />} />
             <Route exact path="/general-consultation" element={<GeneralConsultation />} />

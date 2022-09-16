@@ -40,19 +40,6 @@ export default function Navbar() {
       <div
         className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
         <ul>
-      
-          <li>
-            <NavLink
-              to="/about"
-              className='nav-link'
-              onClick={handleExpandedNavMenu}
-              style={({ isActive }) => ({
-                color: isActive ? 'Blue' : '#545e6f',
-              })}
-            >
-              About
-            </NavLink>
-          </li>
           <li>
             <NavLink
               to="/covid-care" 

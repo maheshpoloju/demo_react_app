@@ -89,8 +89,6 @@ const Registration = () => {
 		e.preventDefault()
 	}
 	
-	
-
 	const handleRegister = () => {
 		setShowMedicalForm(true)
 	}
@@ -107,6 +105,9 @@ const Registration = () => {
 	    setSelectedMedicalHistoryData(tempData.filter(each => each.isSelected === true))
 	}
 	
+	const handleSubmit = () => {
+		alert("Thank You, we would contact you at your email or Phone.")
+	}
 	
 	return(
 		<section id="register" className="registration-main-container p-3">
@@ -231,7 +232,7 @@ const Registration = () => {
 					  
 			        	
 	        <div>
-	        	<button type="submit" className='submit-button'>
+	        	<button type="submit" className='submit-button' onClick={handleSubmit}>
 	            	Submit
 	          	</button>
 	        </div>
