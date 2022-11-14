@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  width: 100vw;
 }
 
 .person-container {
@@ -15,12 +14,9 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   width: 350px;
 }
-.image-container {
-  /*border:2px solid red;*/
-}
 
 .profile-image {
-  height: 350px;
+  height: 320px;
   width: 340px;
 }
 @media screen and (max-width: 768px) {
