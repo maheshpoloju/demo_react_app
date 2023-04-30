@@ -24,7 +24,6 @@ const teamData = [
 
 const Home = () => {
   const [selected, setSelected] = useState(null);
-
   const handleShowMoreLess = (id) => {
     setSelected(selected === id ? null : id);
   };
