@@ -23,12 +23,10 @@ const teamData = [
 ];
 
 const Home = () => {
-  const [clicked, setClicked] = useState(false);
   const [selected, setSelected] = useState(null);
 
   const handleShowMoreLess = (id) => {
-    setClicked((prev) => !prev);
-    setSelected(clicked ? null : id);
+    setSelected(selected === id ? null : id);
   };
 
   return (
