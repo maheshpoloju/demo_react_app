@@ -1,109 +1,76 @@
-
 import { useState } from "react";
-import { NavLink } from 'react-router-dom';
-import {
-  Link
-} from "react-router-dom";
-
-import { AiFillCaretDown } from 'react-icons/ai';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { ImCross } from 'react-icons/im';
-
-
-import './index.css'
+import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { ImCross } from "react-icons/im";
+import "./index.css";
 
 export default function Navbar() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false)
-  // const [showNavbarDropDown, setShowNavbarDropDown] = useState(false)
-  
-  const hamburgerIcon = isNavExpanded ? <ImCross /> : <GiHamburgerMenu />
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const hamburgerIcon = isNavExpanded ? <ImCross /> : <GiHamburgerMenu />;
   const handleExpandedNavMenu = () => {
-    setIsNavExpanded(false)
-
-  }
+    setIsNavExpanded(false);
+  };
   return (
     <nav className="navigation">
-      
-      <Link to="/" className='brand-name nav-link' 
+      <Link
+        to="/"
+        className="brand-name nav-link"
         onClick={() => setIsNavExpanded(false)}
       >
-        SP DisciplesCare
+        Demo
       </Link>
-      <button 
-          className="hamburger" 
-          onClick={() => {
-            setIsNavExpanded(!isNavExpanded)
-          }}
-        >
+      <button
+        className="hamburger"
+        onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}
+      >
         {hamburgerIcon}
       </button>
       <div
-        className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      >
         <ul>
           <li>
             <NavLink
-              to="/covid-care" 
-              className='nav-link'
+              to="/link_1"
+              className="nav-link"
               onClick={handleExpandedNavMenu}
               style={({ isActive }) => ({
-                color: isActive ? 'Blue' : '#545e6f',
+                color: isActive ? "Blue" : "#545e6f",
               })}
             >
-              Covid Care
+              Link 1
             </NavLink>
           </li>
-          
+
           <li className="dropdown">
             <NavLink
-              to="/acute-care" 
-              className='nav-link'
+              to="/link_2"
+              className="nav-link"
               onClick={handleExpandedNavMenu}
               style={({ isActive }) => ({
-                color: isActive ? 'Blue' : '#545e6f',
+                color: isActive ? "Blue" : "#545e6f",
               })}
             >
-              Acute Care 
+              Link 2
             </NavLink>
           </li>
-          
+
           <li>
-            
             <NavLink
-                  to="/general-consultation"
-                  className='nav-link'
-                  onClick={handleExpandedNavMenu}
-                  style={({ isActive }) => ({
-                    color: isActive ? 'Blue' : '#545e6f',
-                  })}
-                >
-                General Consultation
-              </NavLink>
-          </li>
-          <li>
-            
-            <NavLink
-                  to="/medication-refill" 
-                  className='nav-link'
-                  onClick={handleExpandedNavMenu}
-                  style={({ isActive }) => ({
-                    color: isActive ? 'Blue' : '#545e6f',
-                  })}
-                >
-                Medication refill
-              </NavLink>
-          </li>
-          <li>
-            
-            <NavLink
-                  to="/registration" 
-                  className='nav-link'
-                  onClick={handleExpandedNavMenu}
-                  style={({ isActive }) => ({
-                    color: isActive ? 'Blue' : '#545e6f',
-                  })}
-                >
-                Registration
-              </NavLink>
+              to="/link_3"
+              className="nav-link"
+              onClick={handleExpandedNavMenu}
+              style={({ isActive }) => ({
+                color: isActive ? "Blue" : "#545e6f",
+              })}
+            >
+              Link 3
+            </NavLink>
           </li>
         </ul>
       </div>
