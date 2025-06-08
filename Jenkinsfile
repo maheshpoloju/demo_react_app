@@ -40,8 +40,8 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 bat '''
-                    docker stop %CONTAINER_NAME% || true
-                    docker rm %CONTAINER_NAME% || true
+                    docker stop %CONTAINER_NAME%
+                    docker rm %CONTAINER_NAME%
                 '''
                 bat 'docker run -d -p 3030:80 --name %CONTAINER_NAME% %IMAGE_NAME%'
             }
