@@ -40,8 +40,16 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 bat '''
+                @echo off
+                docker ps -a --filter "name=%CONTAINER_NAME%" --format "{{.Names}}" | findstr /I "^%CONTAINER_NAME%$" >nul
+                if %ERRORLEVEL% == 0 (
+                    echo Stopping container %CONTAINER_NAME%...
                     docker stop %CONTAINER_NAME%
+                    echo Removing container %CONTAINER_NAME%...
                     docker rm %CONTAINER_NAME%
+                ) else (
+                    echo Container %CONTAINER_NAME% does not exist. Skipping stop and remove.
+                )
                 '''
                 bat 'docker run -d -p 3030:80 --name %CONTAINER_NAME% %IMAGE_NAME%'
             }
