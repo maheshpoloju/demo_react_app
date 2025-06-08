@@ -16,13 +16,13 @@ pipeline {
 
         stage('Run tests') {
             steps {
-                sh 'npm test -- --watchAll=false'
+                bat 'npm test -- --watchAll=false'
             }
         }
 
         stage('Build app') {
             steps {
-                sh 'npm run build'
+                bat 'npm run build'
             }
         }
 
