@@ -50,6 +50,7 @@ pipeline {
                 ) else (
                     echo Container %CONTAINER_NAME% does not exist. Skipping stop and remove.
                 )
+                exit /b 0
                 '''
                 bat 'docker run -d -p 3030:80 --name %CONTAINER_NAME% %IMAGE_NAME%'
             }
